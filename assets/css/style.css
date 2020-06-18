@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    #search-value {
+        max-width: 80%;
+    }
+
+    #five-day-card {
+      min-width: 100%;
+    }
+  }
