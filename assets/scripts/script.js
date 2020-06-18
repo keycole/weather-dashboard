@@ -20,7 +20,7 @@ $(document).ready(function () {
     //Function to get current weather function
     function getTodayWeather(city) {
         var appID = '&appid=e41de03afb99a4ce0d419d4ce7dbd8d3'
-        var todayURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + appID + '&units=imperial';
+        var todayURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + appID + '&units=imperial';
         //Make call to the Current Weather API
         $.ajax({
             method: 'GET',
@@ -37,7 +37,7 @@ $(document).ready(function () {
                 var temp = Math.round(response.main.temp);
                 var humidity = response.main.humidity;
                 var wind = response.wind.speed;
-                var dayIcon = 'http://openweathermap.org/img/w/' + response.weather[0].icon + '.png';
+                var dayIcon = 'https://openweathermap.org/img/w/' + response.weather[0].icon + '.png';
                 var coord = '?lat=' + response.coord.lat + '&lon=' + response.coord.lon;
 
                 //Create and append today's weather card
@@ -92,7 +92,7 @@ $(document).ready(function () {
     //Function to get lat/lon valuses for the five day weather forecast
     function getFiveDay(city) {
         var appID = '&appid=e41de03afb99a4ce0d419d4ce7dbd8d3'
-        var todayURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + appID + '&units=imperial';
+        var todayURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + appID + '&units=imperial';
         //Make call to the Seven Day Forecast API
         $.ajax({
             method: 'GET',
