@@ -12,7 +12,7 @@ A weather dashboard that will run in the browser and feature dynamically updated
 - Momentjs: https://momentjs.com/docs/
 - Google Fonts: https://fonts.google.com/
 
-## Screenshote
+## Screenshots
 
 **Desktop**
 
